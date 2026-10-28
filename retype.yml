@@ -1,7 +1,7 @@
 input: .
 output: .retype
 
-url: docs.example.com # Use your website address here
+url: ejemplo-basico-retype.pages.dev # Use your website address here
 
 start:
   # Uncomment the next line to try Retype Pro features
