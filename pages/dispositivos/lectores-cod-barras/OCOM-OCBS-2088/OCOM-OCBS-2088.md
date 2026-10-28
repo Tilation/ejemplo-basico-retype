@@ -16,3 +16,5 @@ Se puede conseguir en: [MercadoLibre](https://www.mercadolibre.com.ar/lector-cod
 Metodo de configuracion: lectura de codigos QR.
 
 ![Codigos QR de configuracion del lector OCOM OCBS-2088](configuracion.png)
+
+[!file](./Manual-OCBS-2088.pdf)

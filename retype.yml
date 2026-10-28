@@ -8,7 +8,7 @@ start:
   # pro: true
 
 branding:
-  title: Project Name
+  title: Documentacion Online
   label: Docs
 
 links:
@@ -17,3 +17,11 @@ links:
 
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+
+lastUpdated:
+  date:
+    enabled: true
+    source: committer
+  by:
+    enabled: true
+    source: committer
