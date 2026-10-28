@@ -3,7 +3,7 @@ icon: "../../../common/icons/qr_code.png"
 categories: 
     - dispositivos
     - codigo de barras
-image: "image.png"
+image: "./NICTOM-LCB6200/NICTOM-LCB6200.png"
 tags:
     - NICTOM
     - LCB6200

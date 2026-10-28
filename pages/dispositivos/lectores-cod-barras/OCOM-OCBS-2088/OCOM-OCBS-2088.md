@@ -3,7 +3,7 @@ icon: "../../../common/icons/qr_code.png"
 categories: 
     - dispositivos
     - codigo de barras
-image: "image.png"
+image: "./OCOM-OCBS-2088/OCOM-OCBS-2088.png"
 tags:
     - OCOM
     - OCBS-2088
