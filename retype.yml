@@ -3,6 +3,9 @@ output: .retype
 
 url: ejemplo-basico-retype.pages.dev # Use your website address here
 
+generator:
+  paths: root
+
 start:
   # Uncomment the next line to try Retype Pro features
   # pro: true

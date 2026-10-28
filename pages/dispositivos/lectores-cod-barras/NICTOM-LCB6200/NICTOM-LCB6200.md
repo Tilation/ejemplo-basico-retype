@@ -3,11 +3,14 @@ icon: "../../../common/icons/qr_code.png"
 categories: 
     - dispositivos
     - codigo de barras
-image: "./NICTOM-LCB6200/NICTOM-LCB6200.png"
 tags:
     - NICTOM
     - LCB6200
 ---
+
+# NICTOM LCB6200
+
+![](./NICTOM-LCB6200.png)
 
 Soporte oficial para este lector de codigo de barras 1D y 2D.
 

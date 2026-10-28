@@ -3,11 +3,14 @@ icon: "../../../common/icons/qr_code.png"
 categories: 
     - dispositivos
     - codigo de barras
-image: "./OCOM-OCBS-2088/OCOM-OCBS-2088.png"
 tags:
     - OCOM
     - OCBS-2088
 ---
+
+# OCOM OCBS-2088
+
+![](./OCOM-OCBS-2088.png)
 
 Soporte oficial para este lector de codigo de barras 1D y 2D.
 
