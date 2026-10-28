@@ -17,6 +17,8 @@ tags:
 
 Soporte oficial para este lector de codigos de barras 1D y 2D.
 
+Precio: :dollar: :dollar: :dollar:
+
 Se puede conseguir en: [MercadoLibre](https://www.mercadolibre.com.ar/lector-codigo-de-barras-2d-con-cable-usb-ocom-cbase/up/MLAU187701781)
 
 
