@@ -1,4 +1,4 @@
-input: .
+input: ./pages
 output: .retype
 
 url: ejemplo-basico-retype.pages.dev # Use your website address here

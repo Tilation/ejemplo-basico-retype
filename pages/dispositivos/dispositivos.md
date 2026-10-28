@@ -1,0 +1,1 @@
+Estos son los dispositivos los cuales se brinda soporte oficial.
