@@ -3,6 +3,7 @@ icon: "../../../common/icons/qr_code.png"
 categories: 
     - dispositivos
     - codigo de barras
+image: "image.png"
 tags:
     - OCOM
     - OCBS-2088
@@ -14,4 +15,4 @@ Se puede conseguir en: [MercadoLibre](https://www.mercadolibre.com.ar/lector-cod
 
 Metodo de configuracion: lectura de codigos QR.
 
-![Codigos QR de configuracion del lector OCOM OCBS-2088](image.png)
+![Codigos QR de configuracion del lector OCOM OCBS-2088](configuracion.png)
