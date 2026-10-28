@@ -6,6 +6,7 @@ categories:
 tags:
     - OCOM
     - OCBS-2088
+    - PDF417
 ---
 
 # OCOM OCBS-2088
@@ -14,7 +15,7 @@ tags:
 
 ## Descripcion
 
-Soporte oficial para este lector de codigo de barras 1D y 2D.
+Soporte oficial para este lector de codigos de barras 1D y 2D.
 
 Se puede conseguir en: [MercadoLibre](https://www.mercadolibre.com.ar/lector-codigo-de-barras-2d-con-cable-usb-ocom-cbase/up/MLAU187701781)
 
