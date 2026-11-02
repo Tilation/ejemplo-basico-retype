@@ -126,50 +126,112 @@ Una vez configurado el servidor LLM, hay que configurar el agente.
 
 Acabamos de configurar el servidor del modelo, ahora tenemos que configurar cómo lo vamos a usar.
 
-1. Configurar VS Code con el harnes local.
-	![](image.png)
-2. Por defecto VS Code nos da opciones de LLM remotos, hay que crear la configuracion para usar nuestro servidor local.
-	1. ![](image-2.png)
-	2. ![](image-3.png)
-	3. Y ahora nos pide informacion:
-		- Nombre del grupo de modelos, elegir uno, como "Local".
-		- API key en blanco, a menos que hayamos asignado una api key cuando configuramos el servidor.
-		- Tipo de api: Elegir "Chat Completions" 
-	4. Deberia generar y abrirnos un archivo asi:
-		![](image-4.png)
-		
-		Que vamos a reemplazar por (reemplazando la ip y puerto por las de nuestro servidor):
-		```json
-		[
-			{
-				"name": "Local",
-				"vendor": "customendpoint",
-				"apiType": "chat-completions",
-				"models": [
-					{
-						"id": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
-						"name": "Llama Server - Gemma 4 26B A4B IT UD Q4 K XL",
-						"url": "http://[ip-servidor]:[puerto]/v1/chat/completions",
-						"toolCalling": true,
-						"vision": true,
-						"apiType": "chat-completions",
-						"contextWindow": 96000,
-						"maxInputTokens": 75000,
-						"maxOutputTokens": 21000,
-						"streaming": true,
-						"thinking": true
-					}
-				]
-			}
-		]
-		```
-3. Listo! ahora VS Code deberia mostrarnos, en una pestaña nuva, nuestro modelo local.
-	![](image-6.png)
-	![](image-7.png)
-	![](image-8.png)
+>>> 1. Configurar VS Code con el harnes local.
+![](image-9.png)
+VS Code por defecto selecciona siempre el harnes de Copilot, para desactivar eso se puede hacer desde la configuracion de VS Code, buscando "harness". Estas son las configuraciones a desactivar para que no pase:
+![](image-10.png)
+
+	
+>>> 2. Por defecto VS Code nos da opciones de LLM remotos, hay que crear la configuracion para usar nuestro servidor local.
+1. ![](image-2.png)
+2. ![](image-3.png)
+3. Y ahora nos pide informacion:
+	- Nombre del grupo de modelos, elegir uno, como "Local".
+	- API key en blanco, a menos que hayamos asignado una api key cuando configuramos el servidor.
+	- Tipo de api: Elegir "Chat Completions" 
+4. Deberia generar y abrirnos un archivo asi:
+	
+	![](image-4.png)
+	
+	Que vamos a reemplazar por (reemplazando la ip y puerto por las de nuestro servidor):
+	```json
+	[
+		{
+			"name": "Local",
+			"vendor": "customendpoint",
+			"apiType": "chat-completions",
+			"models": [
+				{
+					"id": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
+					"name": "Llama Server - Gemma 4 26B A4B IT UD Q4 K XL",
+					"url": "http://[ip-servidor]:[puerto]/v1/chat/completions",
+					"toolCalling": true,
+					"vision": true,
+					"apiType": "chat-completions",
+					"contextWindow": 96000,
+					"maxInputTokens": 75000,
+					"maxOutputTokens": 21000,
+					"streaming": true,
+					"thinking": true
+				}
+			]
+		}
+	]
+	```
+>>> 3. Listo! ahora VS Code deberia mostrarnos, en una pestaña nuva, nuestro modelo local.
+![](image-6.png)
+![](image-7.png)
+![](image-8.png)
 
 La conexion ya está lista para ser usada, solo queda configurar herramientas y skills, que son muy importantes.
 
 !!!info
 En este punto ya podemos probar y chatear con nuestro modelo LLM desde el chat de VS Code!
 !!!
+
+>>>
+
+## 5. Configuracion de herramientas disponibles para el agente
+
+Las herramientas activas para el chat se configuran desde ese boton, abre una lista para seleccionar, y tienen efecto en el proximo chat, el cambio de herramientas activas no afecta la sesion activa.
+
+![](image-11.png)
+
+![](image-12.png)
+
+## 6. Configuracion de `skills`
+
+Si escribimos en el chat `/skills` nos autocompleta este comando.
+
+![](image-13.png)
+
+Si apretamos enter en el chat nos abre un listado de operaciones y opciones, elegimos la opcion de crear skill.
+
+![](image-14.png)
+
+Y para que este skill nuevo este disponible en todos los proyectos y chats de vs code proximos, elegimos que sea global.
+
+![](image-15.png)
+
+Le ponemos un nombre y listo.
+
+![](image-16.png)
+
+Esto nos va a crear y abrir un nuevo documento en VS Code, y ahora sabemos y podemos agregar skills en esa carpeta, donde cada skill va a estar disponible para los futuros chats.
+
+![](image-17.png)
+
+Para pruebas vamos a modificar el skill de la siguiente manera:
+```md
+---
+name: mi-skill
+description: Agrega informacion relevante a las respuestas.
+---
+Cada mensaje redactado debe terminar con una linea al final que diga exactamente: "Esta respuesta fue generada con la ayuda de mi-skill."
+```
+
+## 7. Uso de skills
+
+Vamos a usar el skill que acabamos de crear, para usar cualquier skill basta con escribir el comado `/` seguido del nombre del skill. 
+
+![](image-18.png)
+
+En el auto completado apretamos tab y el texto deberia remarcarse en azul, indicando que se enlazó el contenido del skill.
+
+![](image-19.png)
+
+Ahora el mensaje y los siguientes mensajes van a utilizar el skill. Vamos a pedirle que analice este documento que estoy redactando.
+
+Y asi como le pedimos, analizo el documento, nos respondio con el limite de un parrafo y siguio las instrucciones del skill.
+
+![](image-20.png)
