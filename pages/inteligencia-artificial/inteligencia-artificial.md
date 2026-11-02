@@ -13,7 +13,7 @@ Instalacion, configuracion y arranque de modelo LLM en el servidor de IA.
 
 
 
-## 1. Descarga e importacion del modelo MTP
+## 1. Descarga e importacion de los modelos
 
 Creamos una carpeta donde descargar el modelo MTP y lo descargamos a esa carpeta:
 ```bash
@@ -230,7 +230,7 @@ En el auto completado apretamos tab y el texto deberia remarcarse en azul, indic
 
 ![](image-19.png)
 
-Ahora el mensaje y los siguientes mensajes van a utilizar el skill. Vamos a pedirle que analice este documento que estoy redactando.
+Ahora va a utilizar el skill. Vamos a pedirle que analice este documento que estoy redactando.
 
 Y asi como le pedimos, analizo el documento, nos respondio con el limite de un parrafo y siguio las instrucciones del skill.
 
