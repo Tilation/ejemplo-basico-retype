@@ -1,5 +1,5 @@
 ---
-icon: "../../common/icons/lector_barcode.png"
+icon: "{{ project.url }}/common/icons/lector_barcode.png"
 label: "Lectores de códigos de barras"
 ---
 

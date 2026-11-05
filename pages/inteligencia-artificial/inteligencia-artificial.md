@@ -1,5 +1,5 @@
 ---
-icon: "../common/icons/robot_2.png"
+icon: "{{ project.url }}/common/icons/robot_2.png"
 author: Gaspar Corrarello
 ---
 

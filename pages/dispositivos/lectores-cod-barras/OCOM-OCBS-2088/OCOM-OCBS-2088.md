@@ -1,5 +1,5 @@
 ---
-icon: "../../../common/icons/qr_code.png"
+icon: "{{ project.url }}/common/icons/qr_code.png"
 categories: 
     - dispositivos
     - codigo de barras
